@@ -5,7 +5,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 val kluent_version: String by project
 val junit_version: String by project
 val mockk_version: String by project
-
+val assertk_version: String by project
+val assertj_version: String by project
 
 plugins {
 	kotlin("jvm") version "1.3.70"
@@ -25,8 +26,9 @@ dependencies {
 	testImplementation("org.junit.jupiter:junit-jupiter:$junit_version")
 	testImplementation("org.amshove.kluent:kluent:$kluent_version")
 	testImplementation("io.mockk:mockk:$mockk_version")
+	testImplementation("com.willowtreeapps.assertk:assertk-jvm:$assertk_version")
+	testImplementation("org.assertj:assertj-core:$assertj_version")
 }
-
 tasks.test {
 	useJUnitPlatform()
 	testLogging {

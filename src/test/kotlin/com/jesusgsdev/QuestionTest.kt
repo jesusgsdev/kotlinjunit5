@@ -105,7 +105,7 @@ class QuestionTest {
             @Test
             fun `should increment vote if question is not closed`() {
                 question.voteUp()
-                question.votes.`should equal`(1)
+                question.votes.`should be equal to`(1)
             }
 
             @Test
@@ -122,7 +122,7 @@ class QuestionTest {
             @Test
             fun `should decrement vote if question is not closed`() {
                 question.voteDown()
-                question.votes.`should equal`(-1)
+                question.votes.`should be equal to`(-1)
             }
 
             @Test
@@ -137,7 +137,7 @@ class QuestionTest {
             @Test
             fun `should set a closedReason`() {
                 question.close("Not a question")
-                question.closedReason.`should equal`("Not a question")
+                question.closedReason.`should be equal to`("Not a question")
             }
         }
 
@@ -148,7 +148,7 @@ class QuestionTest {
             fun `should add an answer to the stored list`() {
                 val answer = Answer(1, user, "body")
                 question.addAnswer(answer)
-                question.answers.count().`should equal`(1)
+                question.answers.count().`should be equal to`(1)
             }
 
             @Test
