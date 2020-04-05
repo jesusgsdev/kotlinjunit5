@@ -15,3 +15,12 @@ assertions using the **Kluent APIs**.
   
 Finally, you will explore ‘mocking’ using **MockK**, a mocking framework written in and for Kotlin. When you are finished   
 with this course, you will have the skills to test Kotlin code using JUnit and how to refactor code to make it testable.
+
+## Stack
+- Kotlin 1.3.70
+- JUnit 5 5.6.1
+- [MockK](https://mockk.io/) 1.9.3
+- [Kluent](https://github.com/MarkusAmshove/Kluent) 1.6
+
+## Instructions
+Just run `/gradlew clean build` and you will see the outcome of the build and how all tests are passing.
